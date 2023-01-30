@@ -6,7 +6,7 @@ project(demo_facedetection_opencvdnn)
 # 如果是自己编译的OpenCV，cmake报错找不到OpenCV库，可以手动指定到opencv-build文件夹
 # SET(ENV{OpenCV_DIR} /home/khadas/opencv/opencv-build)
 
-find_package(OpenCV 4.5.1 REQUIRED)
+find_package(OpenCV 4.7.0 REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(detect-image detect-image.cpp priorbox.cpp utils.cpp)
